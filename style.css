@@ -1,0 +1,603 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(255, 255, 255);
+}
+  
+.navigation{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color:rgb(255, 255, 255);
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.30);
+}
+
+.logo{
+    margin-right: auto;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+div a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 20px;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.links-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+.links-container a:hover{
+    background-color: black;
+    color: white;
+    transition: 0.3s ease;
+}
+
+#sidebar-active{
+    display: none;
+}
+
+.open-sidebar-button{
+    display: none
+}
+
+.closed-sidebar-button{
+    display: none;
+}
+
+.hero-section-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-section{
+    margin-top: 3rem;
+    height: 50dvh;
+    width: 70dvw;
+    background-image: url('hero-bg-abstract.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 3rem;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.30);
+    font-size: 2rem;
+}
+
+.intro-text-section{
+    margin-left: 12rem;
+    margin-right: 12rem;
+    margin-top: 3rem;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem 3rem;
+}
+
+.action-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action-button a{
+    background-color: black;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.action-button a:hover{
+    background-color: #CF0A0A;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.30);
+    transition: 0.3s ease;
+}
+
+.about-us-section, .gallery, .contact-us, .team, .contact-info{
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.about-us-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-us-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.about-us-image, .about-us-text{
+    width: 40dvw;
+    height: 40dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    font-size: 2rem;
+    padding: 20px 30px;
+    flex-shrink: 1;
+}
+
+.about-us-image img{
+    height: 600px;
+    width: 800px;
+}
+
+.mission, .our-story{
+    width: 40dvw;
+    height: 20dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    padding: 20px 30px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1 1 0;
+    gap: 20px;
+    padding: 20px;
+    margin-left: 12rem;
+    margin-right: 12rem;
+}
+
+.gallery a{
+    text-decoration: none;
+    color: black;
+}
+
+.photo {
+    text-align: center;
+    background: white;
+    padding: 20px 30px;
+}
+
+.photo:hover{
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.30);
+    transition: 0.3s ease;
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.photo p {
+    margin: 10px 0 0;
+    font-weight: bold;
+}
+
+.team-boxes-section img{
+    height: 400px;
+    width: 400px;
+}
+
+.team-boxes-section{
+    margin-left: 12rem;
+    margin-right: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.team-boxes{
+    height: 750px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    padding: 20px 30px;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.30);
+}
+
+.contact-container {
+    width: 70dvw;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 2rem;
+}
+
+.follow-us, .visit-us, .contact-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.contact-info a, .follow-us a {
+    color: #CF0A0A;
+    text-decoration: none;
+}
+
+.contact-info a:hover, .follow-us a:hover {
+    text-decoration: underline;
+}
+
+.follow-us ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.follow-us li {
+    display: inline;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #CF0A0A;
+    transition: 0.3s ease;
+}
+
+@media screen and (max-width: 500px){
+    .about-us-image img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .about-us-image{
+        width: 30dvw;
+        height: 30dvh;
+    }
+
+    .contact-info a, .follow-us a {
+        color: #CF0A0A;
+        text-decoration: none;
+        font-size: 0.5rem;
+    }
+
+    .contact-form textarea {
+        width: 90%;
+    }
+    
+
+
+}
+
+@media screen and (max-width: 780px) {
+    .intro-text-section{
+        font-size: 0.5rem;
+        margin: 0;
+    }
+
+    .about-us-section, .gallery, .contact-us, .team, .contact-info{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    .about-us-image img{
+        height: 10px;
+        width: 10px;
+        margin-left: 0;
+        margin-right: 0;
+        flex-wrap: wrap;
+    }
+
+    .contact-form textarea {
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+
+}
+
+
+@media screen and (max-width: 840px) {
+    .links-container{
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        margin: 0;
+        display: flex;
+        justify-content: flex-start;
+        top: 0;
+
+        right: -100%;
+        z-index: 10;
+        width: 300px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: -4px 0 8px rgba(0, 0, 0, 0.30);
+        transition: 0.5s ease-in-out;
+    }
+
+    .links-container a{
+        justify-content: flex-start;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+    }
+
+    .open-sidebar-button, .closed-sidebar-button{
+        display: block;
+        padding: 0 25px;
+    }
+
+    .closed-sidebar-button{
+        padding-top: 20px;
+    }
+
+    #sidebar-active:checked ~ .links-container{
+        right: 0;
+    }
+
+    #sidebar-active:checked ~ #overlay{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+      }
+
+    .hero-section{
+        font-size: 0.5rem;
+    }
+
+    .about-us-image img{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .hero-text{
+        font-size: 1rem;
+    }
+
+    .team-boxes-section img{
+        height: 200px;
+        width: 200px;
+    }
+
+    .team-boxes{
+        height: 550px;
+        width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1rem;
+        padding-top: 2rem;
+        padding: 20px 30px;
+        box-shadow: -4px 0 8px rgba(0, 0, 0, 0.30);
+    }
+
+    .about-us-image{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 40dvw;
+    }
+
+    .contact-info{
+        font-size: 1rem;
+    }
+
+    .follow-us, .visit-us, .contact-form {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+    
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    .contact-info a, .follow-us a {
+        color: #CF0A0A;
+        text-decoration: none;
+        font-size: 0.75rem;
+    }
+    
+    .contact-info a:hover, .follow-us a:hover {
+        text-decoration: underline;
+    }
+    
+    .follow-us ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 15px;
+    }
+    
+    .follow-us li {
+        display: inline;
+    }
+    
+    .contact-form form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contact-form label {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+    
+    .contact-form button {
+        font-size: 1rem;
+    }
+    
+    .contact-form button:hover {
+        background-color: #CF0A0A;
+    }
+    
+
+
+}
+
+
+@media screen and (max-width: 1700px){
+    .hero-section{
+        font-size: 1.5rem;
+    }
+
+    .intro-text-section{
+        font-size: 1rem;
+    }
+
+    .about-us-wrapper{
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 2rem;
+        flex: 1 1 0;
+    }
+
+    .about-us-text{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .about-us-image{
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        width: 40dvw;
+    }
+
+    .about-us-wrapper{
+        flex-direction: column;
+    }
+
+
+    .mission, .our-story{
+        text-align: center;
+        font-size: 1rem;
+    }
+
+
+
+
+}
